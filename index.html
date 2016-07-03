@@ -85,51 +85,7 @@
             <li class="container-maxbox lrmargin tmargin maxbox-bott">
                 <div id="screen" class="screen">
                     <ul id="ul">
-                        <li>
-                            <div class="maxbox-bott-img fl">
-                                <img src="images/post-2.jpg" alt=""/>
-                            </div>
-                            <div class="maxbox-bott-text fl">
-                                <h2>Angular简介</h2>
-                                <hr/>
-                                <div class="textContent">
-                                    <p>AngularJS是为了克
-                                        服HTML在构建应用上
-                                        的不足而设计的。HTML是一门很好的为静态文本展示设计的声明式语言，但要构建WEB应用的话它就显得乏力了。所以我做了一些工作（你也可以觉得是小花招）来让浏览器做我想要的事。</p>
-                                    <a href="#" class="text-butt">跳转到案例</a>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="maxbox-bott-img fl">
-                                <img src="images/post-2.jpg" alt=""/>
-                            </div>
-                            <div class="maxbox-bott-text fl">
-                                <h2>Angular简介2</h2>
-                                <hr/>
-                                <div class="textContent">
-                                    <p>AngularJS是为了克
-                                        服HTML在构建应用上
-                                        的不足而设计的。HTML是一门很好的为静态文本展示设计的声明式语言，但要构建WEB应用的话它就显得乏力了。所以我做了一些工作（你也可以觉得是小花招）来让浏览器做我想要的事。</p>
-                                    <a href="#" class="text-butt">跳转到案例</a>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="maxbox-bott-img fl">
-                                <img src="images/post-2.jpg" alt=""/>
-                            </div>
-                            <div class="maxbox-bott-text fl">
-                                <h2>Angular简介3</h2>
-                                <hr/>
-                                <div class="textContent">
-                                    <p>AngularJS是为了克
-                                        服HTML在构建应用上
-                                        的不足而设计的。HTML是一门很好的为静态文本展示设计的声明式语言，但要构建WEB应用的话它就显得乏力了。所以我做了一些工作（你也可以觉得是小花招）来让浏览器做我想要的事。</p>
-                                    <a href="#" class="text-butt">跳转到案例</a>
-                                </div>
-                            </div>
-                        </li>
+
 
                     </ul>
                 </div>
@@ -153,6 +109,52 @@
 
 </body>
 <script src="node_modules/jquery/dist/jquery.min.js"></script>
+<script src="js/template.js"></script>
+<!--模板-->
+<script id="tem-img" type="text-html">
+{{each li as val}}
+ <li>
+        <div class="maxbox-bott-img fl">
+                                <img src="{{val.url}}" alt=""/>
+                            </div>
+                            <div class="maxbox-bott-text fl">
+                                <h2>{{val.name}}</h2>
+                                <hr/>
+                                <div class="textContent">
+                                    <p>{{val.value}}</p>
+                                    <a href="{{val.href}}" class="text-butt">跳转到案例</a>
+                                </div>
+                            </div>
+                        </li>
+
+{{/each}}
+
+
+
+</script>
+<script>
+    var data = [{url:'../images/post-2.jpg',
+        href:'#',
+        name:'Angular简介',
+        value:'AngularJS是为了克服HTML在构建应用上的不足而设计的。' +
+        'HTML是一门很好的为静态文本展示设计的声明式语言，' +
+        '但要构建WEB应用的话它就显得乏力了。所以我做了一些工作' +
+        '（你也可以觉得是小花招）来让浏览器做我想要的事。'},
+        {url:'../images/post-1.jpg',
+            href:'#',
+            name:'移动web网页',
+            value:'AngularJS是为了克服HTML在构建应用上的不足而设计的。' +
+            'HTML是一门很好的为静态文本展示设计的声明式语言，' +
+            '但要构建WEB应用的话它就显得乏力了。所以我做了一些工作' +
+            '（你也可以觉得是小花招）来让浏览器做我想要的事。'},
+
+    ]
+
+    //模板生成html加入
+    list = {li:data}
+    var html = template("tem-img",list);
+    $("#ul").html(html);
+</script>
 <script src="js/cssChange.js"></script>
 <script src="js/imgchange.js"></script>
 </html>
