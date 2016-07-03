@@ -143,10 +143,11 @@ html{
     height: 100%;
 }
 .tmargin-left>div:last-of-type{
-    background-color: #E93B32;
+    background-color: #EF4B41;
 }
 .tmargin-left>div:first-of-type{
-    background-color: #EF4B41;
+    background-color: #E93B32;
+
 }
 /*下右两个盒子个小盒子*/
 .tmargin-right>div:last-of-type{

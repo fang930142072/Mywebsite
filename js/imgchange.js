@@ -8,7 +8,7 @@ $(function () {
         var arr = document.getElementById("arr");
 
 //运行函数
-        zhidong(ul,arr,3000);
+        zhidong(ul,arr,4000);
 })
 
 
@@ -29,11 +29,17 @@ function zhidong(ulNode,arrs,speed) {
     //自动轮播
     ds = setInterval(dss, speed);
     function dss() {
-        square = square > ulli.length ? 0 : square;
+        if(ji==0){
+            ji=1;
+        }
+        square = square > ulli.length-1 ? 0 : square;
         //改变按钮颜色
-        ji++;
+        if (ji == ulli.length) {
+            ulNode.style.left = 0;
+            ji = 1;
+        }
         yundong(ulNode, -ji * liwidth);
-
+        ji++;
         square++;
     }
 
@@ -64,13 +70,7 @@ function zhidong(ulNode,arrs,speed) {
         //滑动到第二张
         yundong(ulNode, -ji * liwidth);
 
-        //点亮小方块（排他思想）
-        //小方块轮回道第五个，转回第一个
-        square = square < 0 ? olli.length-1 : square;
-        for (var i = 0; i < olli.length; i++) {
-            olli[i].className = "";
-        }
-        olli[square].className = "current";
+
     }
     span[1].onclick = function () {
         ji++;
