@@ -4,25 +4,27 @@
 
 //窗口变化事件
 function windowResize() {
-    var hei = $(".container-minbox").height()*3+20;
+    //window窗口变化时改变ul的宽
     $(".screen li").width($(".maxbox-bott").width());
-    if($("html").height()>hei){
-        $(".container-ul").css('marginTop',($("html").height()-hei-20)/2);
-    }else{
-        $("html").height(hei+20);
+
+    //window窗口变化时改变marginTop是div居中
+    var maxHeight = $("body").height();
+    var htmlHeight = $("html").height();
+    if(htmlHeight>maxHeight){
+
+        $(".container-ul").css('marginTop',(htmlHeight-maxHeight)/4+10);
     }
+
+
 }
 $(function () {
-    //给轮播图部分 li设置宽高
+    //初始化li的宽，给轮播图部分 li设置宽高
     $(".screen li").width($(".maxbox-bott").width());
-    $(".maxbox-bott").resize(function () {
-        console.log("0")
 
-    })
-
+    //初始化垂直居中
     windowResize();
 
-    $(window)[0].onresize =windowResize;//监控浏览器窗口变化
+    $(window).resize(windowResize);//监控浏览器窗口变化
 })
 
 
