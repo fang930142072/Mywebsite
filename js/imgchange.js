@@ -4,12 +4,11 @@
 //需求：做出轮播焦点图
 //获取各个所需元素节点
 $(function () {
-        var screen = document.getElementById("screen");
         var ul = document.getElementById("ul");
         var arr = document.getElementById("arr");
 
 //运行函数
-        zhidong(ul,arr,2000);
+//        zhidong(ul,arr,3000);
 })
 
 
@@ -32,12 +31,9 @@ function zhidong(ulNode,arrs,speed) {
     function dss() {
         square = square > ulli.length-1 ? 0 : square;
         //改变按钮颜色
-        if (ji == ulli.length) {
-            ulNode.style.left = 0;
-            ji = 1;
-        }
-        yundong(ulNode, -ji * liwidth);
         ji++;
+        yundong(ulNode, -ji * liwidth);
+
         square++;
     }
 

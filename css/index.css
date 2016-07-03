@@ -150,10 +150,11 @@ html{
 }
 /*下右两个盒子个小盒子*/
 .tmargin-right>div:last-of-type{
-    background-color: #E95432;
+    background-color: #E96A32;
 }
 .tmargin-right>div:first-of-type{
-    background-color: #E96A32;
+    background-color: #E95432;
+
 }
 
 /*首页小盒子的布局与图标 公共 start*/
@@ -199,5 +200,44 @@ li.maxbox-bott{
     padding: 0px; }
 #arr #right{right:0px;}
 #arr #left{left:0;}
+
+.maxbox-bott-img{
+    width: 40%;
+    height: 100%;
+    display: inline-block;
+}
+.maxbox-bott-img img{
+    width: 100%;
+    height: auto;
+}
+.maxbox-bott-text{
+    display: inline-block;
+    padding:20px;
+    width: 59%;
+    height: 100%;
+}
+.maxbox-bott-text>h2{
+    font:bold 30px/40px "微软雅黑";
+    padding-left: 20px;
+}
+.textContent{
+    position: relative;
+}
+.maxbox-bott-text p{
+    padding: 30px 20px;
+    font-size: 13px;
+    line-height: 20px;
+}
+.text-butt{
+    position: absolute;
+    bottom: -20px;
+    right: 0;
+    background-color: #E93B32;
+    color: #fff;
+    padding: 3px 10px;
+    cursor: pointer;
+}
+
+
 /*轮播部分 end*/
 /*首页 end*/
