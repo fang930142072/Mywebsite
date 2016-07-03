@@ -1,0 +1,203 @@
+/*首页 start*/
+html{
+    height: 100%;
+    min-height: 100%;
+    overflow: auto;
+    line-height: 1.571428571428571;
+}
+
+.container{
+    margin-right: auto;
+    margin-left: auto;
+
+}
+.img-box{
+    width: 100%;
+    height: 100%;
+}
+.img-box img{
+    width: 100%;
+    height: 100%;
+}
+.container-minbox{
+    width: 150px;
+}
+
+.container-maxbox{
+    margin: 0 160px;
+}
+
+.container-ul{
+    height: 410px;
+    margin: 10px 0;
+    position: relative;
+}
+.container-ul>li{
+    height: 130px;
+
+}
+.write>a{
+    color:#6f6f6f;
+}
+
+.presentation{
+    padding: 30px 40px;
+    text-align: center;
+    overflow: hidden;
+}
+.presentation>.left{
+    float: left;
+    width: 20%;
+    min-width: 140px;
+    height: 100%;
+    padding: 10px 0;
+}
+
+.presentation>.left>h1{
+    display: block;
+    font-size: 30px;
+    line-height: 40px;
+}
+.presentation>.left>h2{
+    display: block;
+    line-height: 40px;
+    letter-spacing:3px;
+    color: #C81623;
+}
+
+
+.presentation .border{
+    border: 1px solid #ccc;
+}
+.presentation>.right{
+    float: right;
+    width: 32%;
+    min-width: 200px;
+    height: 100%;
+}
+.presentation>.right>.rightT{
+    height: 48%;
+    width: 190px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+.presentation>.right>.rightT>a{
+    display: block;
+    height: 100%;
+}
+.rightT .elegant-eleganticons-98:before{
+    margin-top: 1px;
+    padding-top: 1px;
+}
+.rightT .elegant-eleganticons-98{
+    font-size: 16px;
+    line-height: 41px;
+}
+
+.contact{
+    height: 180px;
+    text-align: center;
+}
+.contact>li{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin:0  10px;
+}
+.contact>li:last-of-type{
+    margin-right: 0;
+
+}
+.contact>li:first-of-type{
+    margin-left: 0;
+}
+.contact>li:first-of-type{
+    margin-left: 0px;
+}
+.contact>li>a{
+    display: block;
+    padding: 6px 8px;
+}
+.contact-a1:hover,.contact-a2:hover,.contact-a3:hover,.contact-a4:hover{
+    color: #fff;
+}
+.contact-a1:hover{
+    background-color: #5ad8ff;
+}
+.contact-a2:hover{
+    background-color: #4467b0;
+}
+.contact-a3:hover{
+    background-color: #118cc7;
+}
+.contact-a4:hover{
+    background-color: #6f6f6f;
+}
+
+
+
+
+/*下左两个盒子个小盒子*/
+.tmargin-left>div,.tmargin-right>div{
+    width: 100%;
+    height: 100%;
+}
+.tmargin-left>div:last-of-type{
+    background-color: #E93B32;
+}
+.tmargin-left>div:first-of-type{
+    background-color: #EF4B41;
+}
+/*下右两个盒子个小盒子*/
+.tmargin-right>div:last-of-type{
+    background-color: #E95432;
+}
+.tmargin-right>div:first-of-type{
+    background-color: #E96A32;
+}
+
+/*首页小盒子的布局与图标 公共 start*/
+.icon-minbox{
+    display: block;
+    padding:17% 0;
+    text-align: center;
+    font-size: 13px;
+    height: 100%;
+    /*line-height: 60px;*/
+    color:#fff;
+    letter-spacing: 3px;
+}
+.icon-minbox:hover{
+
+}
+.icon-minbox:before{
+    display: block;
+    font-size: 30px;
+    line-height: 60px;
+
+}
+/*首页小盒子的布局与图标 公共 end*/
+
+
+
+/*轮播部分 strat*/
+li.maxbox-bott{
+    background-color: #fff;
+    height: 270px;
+    position:relative;
+}
+.maxbox-bott>.screen{
+    height: 100%;
+    overflow:hidden;
+    position:relative;
+}
+
+.screen li{  height:270px; overflow:hidden; float:left;}
+.screen ul{ position:absolute; left:0; top:0px; width:100000px;}
+#arr {display: none;}
+#arr span{  width: 30px;  height: 30px; position:absolute;  top:0;  background:#ccc; cursor:pointer; line-height:36px; text-align:center;  font-family:'黑体'; font-size:12px;  font-weight: bold; color:#fff; opacity:0.9;
+    padding: 0px; }
+#arr #right{right:0px;}
+#arr #left{left:0;}
+/*轮播部分 end*/
+/*首页 end*/
