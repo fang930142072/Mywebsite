@@ -8,7 +8,7 @@ $(function () {
         var arr = document.getElementById("arr");
 
 //运行函数
-//        zhidong(ul,arr,3000);
+        zhidong(ul,arr,3000);
 })
 
 
@@ -29,7 +29,7 @@ function zhidong(ulNode,arrs,speed) {
     //自动轮播
     ds = setInterval(dss, speed);
     function dss() {
-        square = square > ulli.length-1 ? 0 : square;
+        square = square > ulli.length ? 0 : square;
         //改变按钮颜色
         ji++;
         yundong(ulNode, -ji * liwidth);
