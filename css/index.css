@@ -41,7 +41,7 @@ html{
 }
 
 .presentation{
-    padding: 30px 40px;
+    padding: 20px 40px;
     text-align: center;
     overflow: hidden;
 }
@@ -51,6 +51,7 @@ html{
     min-width: 140px;
     height: 100%;
     padding: 10px 0;
+    overflow: hidden;
 }
 
 .presentation>.left>h1{
@@ -62,7 +63,7 @@ html{
     display: block;
     line-height: 40px;
     letter-spacing:3px;
-    color: #C81623;
+    color: #666;
 }
 
 
@@ -92,6 +93,10 @@ html{
 .rightT .elegant-eleganticons-98{
     font-size: 16px;
     line-height: 41px;
+}
+.elegant-eleganticons-98:before{
+    display: inline-block;
+    vertical-align: baseline;
 }
 
 .contact{
@@ -139,7 +144,7 @@ html{
 
 /*下左两个盒子个小盒子*/
 .tmargin-left>div,.tmargin-right>div{
-    width: 100%;
+    width: 150px;
     height: 100%;
 }
 .tmargin-left>div:last-of-type{

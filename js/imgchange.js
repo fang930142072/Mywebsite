@@ -8,7 +8,7 @@ $(function () {
         var arr = document.getElementById("arr");
 
 //ÔËÐÐº¯Êý
-        zhidong(ul,arr,4000);
+//        zhidong(ul,arr,4000);
 })
 
 
