@@ -1,0 +1,218 @@
+
+/*导航部分 start*/
+.nav{
+	width: 100%;
+	background-color: rgba(65, 65, 65, 0.9);
+	position: fixed;
+	top: 0;
+	z-index: 100;
+}
+.nav>ul{
+	width: 90%;
+	margin: 0 auto;
+}
+.nav-right>a,.nav-left li>a{
+	display: block;
+	line-height: 50px;
+	color: #fff;
+	font-size: 13px;
+	font-weight: bold;
+}
+
+.nav-left li{
+	float: left;
+	margin-left: 15px;
+}
+.nav-left li:first-of-type{
+	margin-left: 0;
+	
+}
+.nav-left li:first-of-type>a:before,.nav-right>a:before{
+	font-size: 30px;
+	padding-top: 8px;
+	display: block;
+
+}
+
+/*导航部分 end*/
+
+/*个人简介部分 start*/
+	.intro{
+		margin-top: 50px;
+	background: linear-gradient(0deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.8) 100%), url("../images/header-img-black.jpg");
+
+		background-size: cover;
+		background-attachment: fixed;
+		padding: 20px;
+	}
+	.intro-top{
+		margin-left: 5%;
+		margin-right: 5%;
+
+	}
+	.intro-box{
+		float: left;
+		margin-top: 30px;
+		margin-bottom: 30px;
+	}
+	.centent{
+		width: 50%;
+		padding: 50px 0;
+		color: #fff;
+	}
+	.centent h1,.serve-box h1{
+		font-size: 30px;
+		font-weight: bold;
+		line-height: 50px;
+		padding-left: 10px;
+	}
+	.centent p{
+
+		font-size: 14px;
+		padding: 20px 0;
+		
+	}
+	.centent-bot{
+		position: relative;
+	}
+	.centent-bot::after{
+		    content: "7";
+		    font-family: "elegant";
+		    left: 0;
+		    bottom: 11px;
+		    font-size: 18px;
+		    font-weight: normal;
+	}
+	.centent-bot::before{
+		    content: "";
+		    display: block;
+		    position: absolute;
+		    width: 95%;
+		    background: #fff;
+		    height: 1px;
+		    margin-top: 9px;
+		    left: 5%;
+	}
+	
+	
+	.centent ul {
+		margin-top: 40px;
+	}
+	.centent ul li{
+		float: left;
+		text-align: center;
+		width: 30%;
+	}
+	.centent ul li:last-of-type{
+		margin-left: 5%;
+	}
+	.centent ul li:first-of-type{
+		margin-right: 5%;
+	}
+	.centent ul li>div{
+		border: 1px solid #fff;
+	}
+	.minbox-top{
+		line-height: 40px;
+		margin-bottom: 10px;
+	}
+	.minbox-bottom{
+		line-height:70px;
+	}
+/*个人简介部分 end*/
+
+
+/*服务部分 state*/
+.serve{
+	background-color: #fff;
+	position: relative;
+}
+.serve-box{
+	width: 80%;
+	margin: 0 auto;
+	padding: 50px 0;
+}
+.serve-box>.centent-bot::before{
+	background-color: #ccc;
+}
+.serve-box>ul{
+	margin-top: 50px;
+}
+.serve-box>ul>li{
+	float: left;
+	width: 33.3333%;
+	padding-right: 10px;
+}
+.serve-box>ul div{
+	font-weight: bold;
+	font-size:20px;
+}
+.serve-box>ul div>span{
+	display: inline-block;
+	vertical-align: middle;
+	line-height: 50px;
+	width: 50px;
+	height: 50px;
+	text-align: center;
+	font-size: 20px;
+	background-color: red;
+	color: #fff;
+}
+/*服务部分 end*/
+
+
+/*我的流程部分 state*/
+/*.workflow{
+	
+}*/
+/*我的流程部分 end*/
+
+/*个人经历标题与下载 state*/
+.education{
+	background: linear-gradient(0deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.8) 100%), url("../images/header-img-2.jpg");
+	text-align: center;
+	padding: 50px 0;
+	color: #fff;
+	background-size: cover;
+    background-attachment: fixed;
+	 word-spacing:2em;
+    
+}
+.education h1{
+	line-height: 50px;
+	font-size: 25px;
+	font-weight: bold;
+}
+.education p{
+	font-size: 20px;
+}
+.education button{
+	background-color:red;
+	padding: 10px 40px;
+	margin-top: 30px;
+	color: #fff;
+	cursor: pointer;
+
+}
+/*个人经历标题与下载 end*/
+
+
+/*个人技能 state*/
+.skills{
+	background-color: #fff;
+	padding-bottom: 50px;
+}
+.skills .serve-box{
+	padding-bottom: 0;
+}
+.skills>ul{
+	padding: 20px;
+}
+.skills>ul>li{
+	line-height: 30px;
+	
+}
+div.portfolio{
+	background: linear-gradient(0deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.8) 100%), url("../images/header-img-3.jpg");
+}
+/*个人技能 end*/
